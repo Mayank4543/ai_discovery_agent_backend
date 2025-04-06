@@ -5,7 +5,6 @@ const cors = require("cors");
 dotenv= require('dotenv')
 const app = express(); 
 app.use(cors());
-
 app.get("/scrape/github-developers", async (req, res) => {
   const result = [];
   const { date = "daily" } = req.query;
